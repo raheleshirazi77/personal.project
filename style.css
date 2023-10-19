@@ -25,6 +25,14 @@ a {
     display: inline-block;
 }
 
+.button {
+    padding: 13px 25px;
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    background-image: linear-gradient(to right,#8491FF,#62BBFC);
+
+}
 
 /* START -------------------- Header --------------- styles */
 header {
@@ -59,7 +67,7 @@ header nav>ul>li a:hover {
     color: #007bff;
 }
 
-/* zir menu 1 */
+/* submenu level 1 */
 header nav>ul>li ul {
     position: absolute;
     top: 130%;
@@ -87,7 +95,7 @@ header nav>ul>li>ul>li a {
     padding-right: 110px;
 }
 
-/* zir menu 2 */
+/* submenu level 2 */
 header nav>ul>li>ul>li>ul {
     position: absolute;
     top: 0;
@@ -104,4 +112,45 @@ header nav>ul>li>ul>li:hover>ul {
     opacity: 1;
     visibility: visible;
 }
+
+/* START -------------------- main-section-1 --------------- styles */
+.main-section-1 {
+    background-color: #F9F9FF;
+    height: auto;
+}
+
+.main-section-1 .container {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 70px 20px 0;
+    box-sizing: border-box;
+}
+
+.main-section-1 .container>div {
+    display: inline-block;
+    width: 50%;
+}
+
+.main-section-1 .discription {
+    height: 440px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.main-section-1 .discription>h5 {
+    letter-spacing: 3px;
+    color: #292C29;
+}
+.main-section-1 .discription>h1 {
+    font-size: 55px;
+    margin: 25px 0;
+    color: #222222;
+}
+
+.main-section-1 .discription>p {
+    font-size: 15px;
+    margin: 25px 0;
+    color: #838584;
 }
