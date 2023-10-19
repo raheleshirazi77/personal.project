@@ -1,4 +1,9 @@
 /* General Styles */
+*::selection {
+    background-color: #8491FF;
+    color: white;
+}
+
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -25,12 +30,18 @@ a {
     display: inline-block;
 }
 
+p {
+    font-size: 15px;
+    color: #838584;
+    line-height: 25PX;
+}
+
 .button {
     padding: 13px 25px;
     display: inline-block;
     font-size: 15px;
     color: white;
-    background-image: linear-gradient(to right,#8491FF,#62BBFC);
+    background-image: linear-gradient(to right, #8491FF, #62BBFC);
 
 }
 
@@ -124,13 +135,11 @@ header nav>ul>li>ul>li:hover>ul {
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 70px 20px 0;
     box-sizing: border-box;
 }
 
 .main-section-1 .container>div {
-    display: inline-block;
     width: 50%;
 }
 
@@ -139,10 +148,12 @@ header nav>ul>li>ul>li:hover>ul {
     padding: 10px;
     box-sizing: border-box;
 }
+
 .main-section-1 .discription>h5 {
     letter-spacing: 3px;
     color: #292C29;
 }
+
 .main-section-1 .discription>h1 {
     font-size: 55px;
     margin: 25px 0;
@@ -153,4 +164,37 @@ header nav>ul>li>ul>li:hover>ul {
     font-size: 15px;
     margin: 25px 0;
     color: #838584;
+    line-height: 25PX;
+}
+
+/* START -------------------- main-section-2 --------------- styles */
+.main-section-2 .container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px 0;
+    box-sizing: border-box;
+}
+
+.main-section-2 .container>div {
+    width: 40%;
+}
+
+.main-section-2 .discription {
+    height: 440px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #222222;
+}
+
+.main-section-2 .discription>h1 {
+    margin: 40px 0;
+}
+
+.main-section-2 .discription>p {
+    font-size: 15px;
+    margin: 30px 0;
+}
+
 }
