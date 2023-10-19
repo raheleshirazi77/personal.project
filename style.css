@@ -1,11 +1,11 @@
 /* General Styles */
 body {
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
-    background-color: rgb(165, 113, 113);
-    width: 1100px;
+    width: 1160px;
     margin: 0 auto;
 }
 
@@ -16,19 +16,92 @@ ul {
 }
 
 li {
-    display: inline-block;
+    position: relative;
 }
 
 a {
     color: black;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    display: inline-block;
 }
 
 
-
-
-/* START Header styles */
+/* START -------------------- Header --------------- styles */
 header {
-    background-color: rgb(217, 69, 69);
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+header nav>ul {
+    display: flex;
+}
+
+header nav>ul>li {
+    font-size: 12px;
+    padding: 10px;
+    display: inline-block;
+}
+
+header nav>ul>li>a {
+    padding: 5px;
+}
+
+header nav>ul>li a:hover {
+    color: #007bff;
+}
+
+/* zir menu 1 */
+header nav>ul>li ul {
+    position: absolute;
+    top: 130%;
+    right: 0;
+
+    background-color: white;
+    padding: 8px;
+    width: max-content;
+    box-shadow: 0px 0px 30px 3px rgba(127, 137, 161, 0.25);
+
+    opacity: 0;
+    visibility: hidden;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
+}
+
+header nav>ul>li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+header nav>ul>li>ul>li a {
+    padding: 10px;
+    padding-right: 110px;
+}
+
+/* zir menu 2 */
+header nav>ul>li>ul>li>ul {
+    position: absolute;
+    top: 0;
+    right: 104.9%;
+
+    opacity: 0;
+    visibility: hidden;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
+}
+
+header nav>ul>li>ul>li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+}
 }
